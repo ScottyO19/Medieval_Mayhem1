@@ -1,8 +1,8 @@
-﻿Log file open, 01/23/21 21:15:03
+﻿Log file open, 01/23/21 21:39:45
 LogInit: Display: Running engine for game: Medieval_Mayhem1
 LogPlatformFile: Not using cached read wrapper
-LogTaskGraph: Started task graph with 5 named threads and 47 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.136735
+LogTaskGraph: Started task graph with 5 named threads and 17 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.135083
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -5:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -154,7 +154,7 @@ LogInit: Compiled (64-bit): Oct 11 2020 08:10:49
 LogInit: Compiled with Visual C++: 19.24.28315.00
 LogInit: Build Configuration: Development
 LogInit: Branch Name: ++UE4+Release-4.25
-LogInit: Command Line:  127.0.0.1:17777 -game -PIEVIACONSOLE -Multiprocess GameUserSettingsINI=C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/PIEGameUserSettings0.ini -MultiprocessSaveConfig -MultiprocessOSS -messaging -SessionName="Play in Standalone Game" -windowed -ResX=1280 -ResY=720
+LogInit: Command Line:  /Game/Multiplayer/MainMenu -game -PIEVIACONSOLE -Multiprocess -server -logGameUserSettingsINI=C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/PIEGameUserSettings0.ini -MultiprocessSaveConfig -MultiprocessOSS -messaging -SessionName="Play in Standalone Game" -port=17777 -windowed
 LogInit: Base Directory: D:/UE_4.25/Engine/Binaries/Win64/
 LogInit: Allocator: TBB
 LogInit: Installed Engine Build: 1
@@ -204,588 +204,403 @@ LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Setting CVar [[r.setres:1280x720]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Engine.ini]
-[2021.01.24-02.15.03:469][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Engine.ini]
-[2021.01.24-02.15.03:469][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Engine.ini]
-[2021.01.24-02.15.03:469][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Engine.ini]
-[2021.01.24-02.15.03:469][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
-[2021.01.24-02.15.03:469][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Engine.ini]
-[2021.01.24-02.15.03:469][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Engine.ini]
-[2021.01.24-02.15.03:471][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2021.01.24-02.15.03:471][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
-[2021.01.24-02.15.03:472][  0]LogInit: Selected Device Profile: [Windows]
-[2021.01.24-02.15.03:472][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2021.01.24-02.15.03:472][  0]LogHAL: Display: Platform has ~ 32 GB [34270089216 / 34359738368 / 32], which maps to Largest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2021.01.24-02.15.03:472][  0]LogInit: Going up to parent DeviceProfile []
-[2021.01.24-02.15.03:472][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2021.01.24-02.15.03:472][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
-[2021.01.24-02.15.03:473][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Engine.ini]
-[2021.01.24-02.15.03:473][  0]LogInit: Computer: DIGITALSTORM-PC
-[2021.01.24-02.15.03:473][  0]LogInit: User: Admin
-[2021.01.24-02.15.03:473][  0]LogInit: CPU Page size=4096, Cores=8
-[2021.01.24-02.15.03:473][  0]LogInit: High frequency timer resolution =10.000000 MHz
-[2021.01.24-02.15.03:473][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
-[2021.01.24-02.15.03:473][  0]LogMemory: Platform Memory Stats for Windows
-[2021.01.24-02.15.03:473][  0]LogMemory: Process Physical Memory: 116.64 MB used, 116.64 MB peak
-[2021.01.24-02.15.03:473][  0]LogMemory: Process Virtual Memory: 97.96 MB used, 97.96 MB peak
-[2021.01.24-02.15.03:473][  0]LogMemory: Physical Memory: 10633.48 MB used,  22049.02 MB free, 32682.50 MB total
-[2021.01.24-02.15.03:473][  0]LogMemory: Virtual Memory: 5188.05 MB used,  134212536.00 MB free, 134217728.00 MB total
-[2021.01.24-02.15.03:657][  0]LogWindows: WindowsPlatformFeatures enabled
-[2021.01.24-02.15.03:669][  0]LogInit: Physics initialised using underlying interface: PhysX
-[2021.01.24-02.15.03:669][  0]LogInit: Using OS detected language (en-US).
-[2021.01.24-02.15.03:669][  0]LogInit: Using OS detected locale (en-US).
-[2021.01.24-02.15.03:670][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
-[2021.01.24-02.15.03:814][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2021.01.24-02.15.03:814][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2021.01.24-02.15.03:820][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2021.01.24-02.15.03:820][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
-[2021.01.24-02.15.03:820][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
-[2021.01.24-02.15.03:820][  0]LogD3D11RHI: D3D11 adapters:
-[2021.01.24-02.15.03:882][  0]LogD3D11RHI:    0. 'NVIDIA GeForce RTX 2060 SUPER' (Feature Level 11_0)
-[2021.01.24-02.15.03:882][  0]LogD3D11RHI:       8031/0/16341 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2021.01.24-02.15.03:884][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2021.01.24-02.15.03:884][  0]LogD3D11RHI:       0/0/16341 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2021.01.24-02.15.03:884][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2021.01.24-02.15.03:890][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2021.01.24-02.15.03:891][  0]LogD3D11RHI:     GPU DeviceId: 0x1f06 (for the marketing name, search the web for "GPU Device Id")
-[2021.01.24-02.15.03:891][  0]LogWindows: EnumDisplayDevices:
-[2021.01.24-02.15.03:891][  0]LogWindows:    0. 'NVIDIA GeForce RTX 2060 SUPER' (P:1 D:1)
-[2021.01.24-02.15.03:891][  0]LogWindows:    1. 'NVIDIA GeForce RTX 2060 SUPER' (P:0 D:0)
-[2021.01.24-02.15.03:891][  0]LogWindows:    2. 'NVIDIA GeForce RTX 2060 SUPER' (P:0 D:0)
-[2021.01.24-02.15.03:891][  0]LogWindows:    3. 'NVIDIA GeForce RTX 2060 SUPER' (P:0 D:0)
-[2021.01.24-02.15.03:891][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2021.01.24-02.15.03:891][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce RTX 2060 SUPER
-[2021.01.24-02.15.03:891][  0]LogD3D11RHI:   Driver Version: 445.87 (internal:26.21.14.4587, unified:445.87)
-[2021.01.24-02.15.03:891][  0]LogD3D11RHI:      Driver Date: 4-3-2020
-[2021.01.24-02.15.03:891][  0]LogRHI: Texture pool is 5621 MB (70% of 8031 MB)
-[2021.01.24-02.15.03:934][  0]LogD3D11RHI: RHI has support for 64 bit atomics
-[2021.01.24-02.15.03:934][  0]LogD3D11RHI: Async texture creation enabled
-[2021.01.24-02.15.03:934][  0]LogD3D11RHI: Array index from any shader is supported
-[2021.01.24-02.15.03:954][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
-[2021.01.24-02.15.04:147][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
-[2021.01.24-02.15.04:149][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
-[2021.01.24-02.15.04:154][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
-[2021.01.24-02.15.04:159][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
-[2021.01.24-02.15.04:159][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2021.01.24-02.15.04:161][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
-[2021.01.24-02.15.04:174][  0]LogShaderCompilers: Guid format shader working directory is 6 characters bigger than the processId version (C:/Users/Admin/Desktop/Medieval_Mayhem1/Intermediate/Shaders/WorkingDirectory/19512/).
-[2021.01.24-02.15.04:174][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Admin/AppData/Local/Temp/UnrealShaderWorkingDir/3C667A604DF2CF744966B6B7EE2C4F9D/'.
-[2021.01.24-02.15.04:174][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2021.01.24-02.15.04:174][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2021.01.24-02.15.04:174][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2021.01.24-02.15.04:799][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2021.01.24-02.15.04:835][  0]LogDerivedDataCache: Loaded boot cache 0.04s 75MB C:/Users/Admin/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
-[2021.01.24-02.15.04:835][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Admin/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
-[2021.01.24-02.15.04:835][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file C:/Users/Admin/Desktop/Medieval_Mayhem1/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2021.01.24-02.15.04:835][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2021.01.24-02.15.04:835][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file C:/Users/Admin/Desktop/Medieval_Mayhem1/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2021.01.24-02.15.04:835][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2021.01.24-02.15.04:843][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2021.01.24-02.15.04:843][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2021.01.24-02.15.04:843][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
-[2021.01.24-02.15.04:843][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Admin/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2021.01.24-02.15.04:843][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2021.01.24-02.15.04:843][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2021.01.24-02.15.04:873][  0]LogSlate: Using FreeType 2.10.0
-[2021.01.24-02.15.04:873][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2021.01.24-02.15.04:921][  0]LogInit: Using OS detected language (en-US).
-[2021.01.24-02.15.04:921][  0]LogInit: Using OS detected locale (en-US).
-[2021.01.24-02.15.04:921][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the language.
-[2021.01.24-02.15.04:921][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the locale.
-[2021.01.24-02.15.04:921][  0]LogSlate: FontCache flush requested. Reason: Culture for localization was changed
-[2021.01.24-02.15.04:921][  0]LogSlate: FontCache flush requested. Reason: Culture for localization was changed
-[2021.01.24-02.15.04:922][  0]LogTextLocalizationManager: Compacting localization data took   0.00ms
-[2021.01.24-02.15.04:924][  0]LogAssetRegistry: FAssetRegistry took 0.0011 seconds to start up
-[2021.01.24-02.15.05:053][  0]LogPackageLocalizationCache: Processed 19 localized package path(s) for 1 prioritized culture(s) in 0.000493 seconds
-[2021.01.24-02.15.05:088][  0]LogInit: Selected Device Profile: [Windows]
-[2021.01.24-02.15.05:153][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2021.01.24-02.15.05:153][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
-[2021.01.24-02.15.05:153][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2021.01.24-02.15.05:153][  0]LogMeshReduction: No distributed automatic mesh merging module available
-[2021.01.24-02.15.05:153][  0]LogMeshMerging: No distributed automatic mesh merging module available
-[2021.01.24-02.15.05:160][  0]LogNetVersion: Medieval_Mayhem1 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 3763729611)
-[2021.01.24-02.15.05:323][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (00000161DF8CD8C0), frame # 0
-[2021.01.24-02.15.05:323][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000161DF7FEAC0), frame # 0
-[2021.01.24-02.15.05:324][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000161DF859A00), frame # 0
-[2021.01.24-02.15.05:354][  0]LogCollectionManager: Loaded 0 collections in 0.000462 seconds
-[2021.01.24-02.15.05:356][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Collections/' took 0.00s
-[2021.01.24-02.15.05:356][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Admin/Desktop/Medieval_Mayhem1/Content/Developers/Admin/Collections/' took 0.00s
-[2021.01.24-02.15.05:356][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Admin/Desktop/Medieval_Mayhem1/Content/Collections/' took 0.00s
-[2021.01.24-02.15.05:356][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000002 seconds (updated 0 objects)
-[2021.01.24-02.15.05:369][  0]LogMoviePlayer: Initializing movie player
-[2021.01.24-02.15.05:458][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2021.01.24-02.15.05:459][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2021.01.24-02.15.05:476][  0]SourceControl: Source control is disabled
-[2021.01.24-02.15.05:476][  0]SourceControl: Source control is disabled
-[2021.01.24-02.15.05:477][  0]SourceControl: Source control is disabled
-[2021.01.24-02.15.05:508][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2021.01.24-02.15.05:511][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2021.01.24-02.15.05:511][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2021.01.24-02.15.05:530][  0]LogOcInput: OculusInput pre-init called
-[2021.01.24-02.15.05:538][  0]LogUObjectArray: 19269 objects as part of root set at end of initial load.
-[2021.01.24-02.15.05:538][  0]LogUObjectAllocator: 5079872 out of 0 bytes used by permanent object pool.
-[2021.01.24-02.15.05:538][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2021.01.24-02.15.05:562][  0]LogEngine: Initializing Engine...
-[2021.01.24-02.15.05:563][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2021.01.24-02.15.05:563][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
-[2021.01.24-02.15.05:564][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
-[2021.01.24-02.15.05:628][  0]LogInit: Initializing FReadOnlyCVARCache
-[2021.01.24-02.15.05:629][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2021.01.24-02.15.05:629][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2021.01.24-02.15.05:629][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2021.01.24-02.15.05:629][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2021.01.24-02.15.05:629][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2021.01.24-02.15.05:629][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2021.01.24-02.15.05:629][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2021.01.24-02.15.05:629][  0]LogAudio: Display: AudioDevice MaxSources: 32
-[2021.01.24-02.15.05:630][  0]LogAudio: Display: Using built-in audio occlusion.
-[2021.01.24-02.15.05:630][  0]LogAudioMixer: Display: Initializing audio mixer.
-[2021.01.24-02.15.06:333][  0]LogAudioMixer: Display: 0: FrontLeft
-[2021.01.24-02.15.06:333][  0]LogAudioMixer: Display: 1: FrontRight
-[2021.01.24-02.15.06:363][  0]LogAudioMixer: Display: Using Audio Device Headphones (Xbox Controller)
-[2021.01.24-02.15.06:365][  0]LogAudioMixer: Display: Initializing Sound Submixes...
-[2021.01.24-02.15.06:366][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
-[2021.01.24-02.15.06:366][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
-[2021.01.24-02.15.06:367][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
-[2021.01.24-02.15.06:368][  0]LogInit: FAudioDevice initialized.
-[2021.01.24-02.15.06:369][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2021.01.24-02.15.06:369][  0]LogInit: Texture streaming: Enabled
-[2021.01.24-02.15.06:400][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.01.24-02.15.06:400][  0]LogInit: Display: Game Engine Initialized.
-[2021.01.24-02.15.06:400][  0]LogNiagaraEditor: Warning: GEditor isn't valid! Particle reset commands will not work for Niagara components!
-[2021.01.24-02.15.06:407][  0]LogInit: Display: Starting Game.
-[2021.01.24-02.15.06:408][  0]LogNet: Browse: 127.0.0.1:17777/Game/Multiplayer/MainMenu?Name=Player
-[2021.01.24-02.15.06:408][  0]LogOnline: OSS: Creating online subsystem instance for: STEAM
-[2021.01.24-02.15.06:408][  0]LogOnline: Warning: STEAM: Steam API disabled!
-[2021.01.24-02.15.06:408][  0]LogOnline: Display: STEAM: OnlineSubsystemSteam::Shutdown()
-[2021.01.24-02.15.06:408][  0]LogInit: WinSock: Socket queue. Rx: 32768 (config 32768) Tx: 32768 (config 32768)
-[2021.01.24-02.15.06:408][  0]LogNet: Created socket for bind address: 0.0.0.0 on port 0
-[2021.01.24-02.15.06:408][  0]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
-[2021.01.24-02.15.06:408][  0]LogNet: Game client on port 17777, rate 10000
-[2021.01.24-02.15.06:423][  0]LogLoad: (Engine Initialization) Total time: 3.75 seconds
-[2021.01.24-02.15.06:423][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2021.01.24-02.15.06:425][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2021.01.24-02.15.06:428][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.01.24-02.15.07:431][851]LogHandshake: SendChallengeResponse. Timestamp: 2.323135, Cookie: 150073209079250192166157170106103161017065252225078000108187
-[2021.01.24-02.15.07:463][991]LogNetVersion: Medieval_Mayhem1 1.0.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 3528378707)
-[2021.01.24-02.15.07:463][991]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_0, Driver: PendingNetDriver IpNetDriver_0, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
-[2021.01.24-02.15.07:496][130]LogNet: Welcomed by server (Level: /Game/Multiplayer/MainMenu, Game: /Game/Multiplayer/MultiplayerGameMode.MultiplayerGameMode_C)
-[2021.01.24-02.15.07:496][130]LogLoad: LoadMap: 127.0.0.1:17777/Game/Multiplayer/MainMenu?Name=Player?game=/Game/Multiplayer/MultiplayerGameMode.MultiplayerGameMode_C
-[2021.01.24-02.15.07:496][130]LogWorld: BeginTearingDown for /Temp/Untitled_0
-[2021.01.24-02.15.07:496][130]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
-[2021.01.24-02.15.07:496][130]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.01.24-02.15.07:511][130]LogUObjectHash: Compacting FUObjectHashTables data took   0.43ms
-[2021.01.24-02.15.07:536][130]LogWorld: Bringing World /Game/Multiplayer/MainMenu.MainMenu up for play (max tick rate 0) at 2021.01.23-21.15.07
-[2021.01.24-02.15.07:536][130]LogWorld: Bringing up level for play took: 0.000197
-[2021.01.24-02.15.07:537][130]LogLoad: Took 0.040293 seconds to LoadMap(/Game/Multiplayer/MainMenu)
-[2021.01.24-02.15.07:538][131]LogRenderer: Reallocating scene render targets to support 1280x720 Format 10 NumSamples 1 (Frame:1).
-[2021.01.24-02.15.07:630][190]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
-[2021.01.24-02.15.07:696][242]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
-[2021.01.24-02.15.09:711][379]LogPackageName: SearchForPackageOnDisk took   0.036s to resolve ThirdPersonExampleMap.umap.
-[2021.01.24-02.15.09:747][379]LogPackageName: SearchForPackageOnDisk took   0.036s to resolve ThirdPersonExampleMap.umap.
-[2021.01.24-02.15.09:747][379]LogNet: Browse: /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap?listen
-[2021.01.24-02.15.09:747][379]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap?listen
-[2021.01.24-02.15.09:747][379]LogWorld: BeginTearingDown for /Game/Multiplayer/MainMenu
-[2021.01.24-02.15.09:747][379]LogNet: World NetDriver shutdown IpNetDriver_0 [GameNetDriver]
-[2021.01.24-02.15.09:747][379]LogNet: DestroyNamedNetDriver IpNetDriver_0 [GameNetDriver]
-[2021.01.24-02.15.09:747][379]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_0, Driver: GameNetDriver IpNetDriver_0, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:DigitalStorm-PC-D2F8711F4740A8EBEB2670945A78AA8B, Channels: 11, Time: 2021.01.24-02.15.09
-[2021.01.24-02.15.09:747][379]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_0, Driver: GameNetDriver IpNetDriver_0, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:DigitalStorm-PC-D2F8711F4740A8EBEB2670945A78AA8B
-[2021.01.24-02.15.09:747][379]LogExit: GameNetDriver IpNetDriver_0 shut down
-[2021.01.24-02.15.09:747][379]LogWorld: UWorld::CleanupWorld for MainMenu, bSessionEnded=true, bCleanupResources=true
-[2021.01.24-02.15.09:747][379]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.01.24-02.15.09:776][379]LogUObjectHash: Compacting FUObjectHashTables data took   0.39ms
-[2021.01.24-02.15.09:921][379]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2021.01.24-02.15.09:921][379]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000161D5D68600), frame # 5379
-[2021.01.24-02.15.09:921][379]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000161D9504B80), frame # 5379
-[2021.01.24-02.15.09:921][379]LogLoad: Game class is 'ThirdPersonGameMode_C'
-[2021.01.24-02.15.09:921][379]LogOnline: OSS: Creating online subsystem instance for: STEAM
-[2021.01.24-02.15.09:921][379]LogOnline: Warning: STEAM: Steam API disabled!
-[2021.01.24-02.15.09:921][379]LogOnline: Display: STEAM: OnlineSubsystemSteam::Shutdown()
-[2021.01.24-02.15.09:922][379]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
-[2021.01.24-02.15.09:922][379]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
-[2021.01.24-02.15.09:922][379]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
-[2021.01.24-02.15.09:922][379]LogNet: Created socket for bind address: 0.0.0.0 on port 7777
-[2021.01.24-02.15.09:922][379]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
-[2021.01.24-02.15.09:922][379]LogNet: GameNetDriver IpNetDriver_1 IpNetDriver listening on port 7777
-[2021.01.24-02.15.09:924][379]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2021.01.23-21.15.09
-[2021.01.24-02.15.09:924][379]LogWorld: Bringing up level for play took: 0.002052
-[2021.01.24-02.15.09:925][379]LogLoad: Took 0.178593 seconds to LoadMap(/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap)
-[2021.01.24-02.15.21:230][130]LogNet: NotifyAcceptingConnection accepted from: 192.168.1.31:57504
-[2021.01.24-02.15.21:230][130]LogHandshake: SendConnectChallenge. Timestamp: 11.559082, Cookie: 071037120171004141037153146042183204187162020114182003157209
-[2021.01.24-02.15.21:242][137]LogNet: NotifyAcceptingConnection accepted from: 192.168.1.31:57504
-[2021.01.24-02.15.21:242][137]LogHandshake: SendChallengeAck. InCookie: 071037120171004141037153146042183204187162020114182003157209
-[2021.01.24-02.15.21:242][137]LogNet: Server accepting post-challenge connection from: 192.168.1.31:57504
-[2021.01.24-02.15.21:243][137]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
-[2021.01.24-02.15.21:243][137]LogNet: NotifyAcceptedConnection: Name: ThirdPersonExampleMap, TimeStamp: 01/23/21 21:15:21, [UNetConnection] RemoteAddr: 192.168.1.31:57504, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_1, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
-[2021.01.24-02.15.21:243][137]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 192.168.1.31:57504, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_1, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
-[2021.01.24-02.15.21:255][144]LogNet: NotifyAcceptingChannel Control 0 server World /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap: Accepted
-[2021.01.24-02.15.21:255][144]LogNet: Remote platform little endian=1
-[2021.01.24-02.15.21:255][144]LogNet: This platform little endian=1
-[2021.01.24-02.15.21:273][153]LogNet: Login request: ?Name=DigitalStorm-PC-9FAEAEA84DB4B563BDA5299236F51CF1 userId: NULL:DigitalStorm-PC-9FAEAEA84DB4B563BDA5299236F51CF1 platform: NULL
-[2021.01.24-02.15.21:286][160]LogNet: Client netspeed is 10000
-[2021.01.24-02.15.21:479][283]LogNet: Join request: /Game/Multiplayer/MainMenu?Name=DigitalStorm-PC-9FAEAEA84DB4B563BDA5299236F51CF1?SplitscreenCount=1
-[2021.01.24-02.15.21:480][283]LogNet: Join succeeded: DigitalStorm-PC-9FAE
-[2021.01.24-02.15.28:278][270]LogNet: UChannel::ReceivedSequencedBunch: Bunch.bClose == true. ChIndex == 0. Calling ConditionalCleanUp.
-[2021.01.24-02.15.28:278][270]LogNet: UChannel::CleanUp: ChIndex == 0. Closing connection. [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 192.168.1.31:57504, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_1, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:DigitalStorm-PC-9FAEAEA84DB4B563BDA5299236F51CF1
-[2021.01.24-02.15.28:278][270]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 192.168.1.31:57504, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_1, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:DigitalStorm-PC-9FAEAEA84DB4B563BDA5299236F51CF1, Channels: 11, Time: 2021.01.24-02.15.28
-[2021.01.24-02.15.28:278][270]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 192.168.1.31:57504, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_1, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:DigitalStorm-PC-9FAEAEA84DB4B563BDA5299236F51CF1
-[2021.01.24-02.15.32:607][973]LogSlate: Window 'Medieval_Mayhem1 (64-bit Development PCD3D_SM5) ' being destroyed
-[2021.01.24-02.15.32:607][973]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2021.01.24-02.15.32:609][973]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.01.24-02.15.32:609][973]LogEngine: All Windows Closed
-[2021.01.24-02.15.32:609][973]LogWindows: FPlatformMisc::RequestExit(0)
-[2021.01.24-02.15.32:609][973]LogCore: Engine exit requested (reason: Win RequestExit)
-[2021.01.24-02.15.32:609][974]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
-[2021.01.24-02.15.32:610][974]LogAudio: Display: Shutting down audio device while 2 references to it are still alive. For more information, compile with INSTRUMENT_AUDIODEVICE_HANDLES.
-[2021.01.24-02.15.32:661][974]LogInit: Display: PreExit Game.
-[2021.01.24-02.15.32:682][974]LogWorld: BeginTearingDown for /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap
-[2021.01.24-02.15.32:682][974]LogNet: World NetDriver shutdown IpNetDriver_1 [GameNetDriver]
-[2021.01.24-02.15.32:682][974]LogNet: DestroyNamedNetDriver IpNetDriver_1 [GameNetDriver]
-[2021.01.24-02.15.32:682][974]LogExit: GameNetDriver IpNetDriver_1 shut down
-[2021.01.24-02.15.32:682][974]LogWorld: UWorld::CleanupWorld for ThirdPersonExampleMap, bSessionEnded=true, bCleanupResources=true
-[2021.01.24-02.15.32:682][974]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.01.24-02.15.33:587][974]LogExit: Preparing to exit.
-[2021.01.24-02.15.34:477][974]LogMoviePlayer: Shutting down movie player
-[2021.01.24-02.15.34:589][974]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.01.24-02.15.34:591][974]LogDemo: Cleaned up 0 splitscreen connections with owner deletion
-[2021.01.24-02.15.34:593][974]LogExit: Game engine shut down
-[2021.01.24-02.15.34:602][974]LogAISub: UAISubsystem::~UAISubsystem AISubsystem (00000161DF8CD8C0), frame # 15974
-[2021.01.24-02.15.34:602][974]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000161DF7FEAC0), frame # 15974
-[2021.01.24-02.15.34:602][974]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000161DF859A00), frame # 15974
-[2021.01.24-02.15.34:603][974]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000161D5D68600), frame # 15974
-[2021.01.24-02.15.34:603][974]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000161D9504B80), frame # 15974
-[2021.01.24-02.15.34:618][974]LogExit: Object subsystem successfully closed.
-[2021.01.24-02.15.34:639][974]LogShaderCompilers: Display: Shaders left to compile 0
-[2021.01.24-02.15.34:643][974]LogModuleManager: Shutting down and abandoning module AIModule (512)
-[2021.01.24-02.15.34:643][974]LogModuleManager: Shutting down and abandoning module AITestSuite (511)
-[2021.01.24-02.15.34:643][974]LogModuleManager: Shutting down and abandoning module NavigationSystem (509)
-[2021.01.24-02.15.34:643][974]LogModuleManager: Shutting down and abandoning module GameplayDebugger (506)
-[2021.01.24-02.15.34:643][974]LogModuleManager: Shutting down and abandoning module Voice (504)
-[2021.01.24-02.15.34:643][974]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (500)
-[2021.01.24-02.15.34:643][974]LogModuleManager: Shutting down and abandoning module SequenceRecorder (498)
-[2021.01.24-02.15.34:643][974]LogModuleManager: Shutting down and abandoning module AutomationController (496)
-[2021.01.24-02.15.34:643][974]LogModuleManager: Shutting down and abandoning module AutomationWorker (494)
-[2021.01.24-02.15.34:643][974]LogModuleManager: Shutting down and abandoning module OculusMR (492)
-[2021.01.24-02.15.34:643][974]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (490)
-[2021.01.24-02.15.34:643][974]LogModuleManager: Shutting down and abandoning module WebMMediaFactory (488)
-[2021.01.24-02.15.34:643][974]LogModuleManager: Shutting down and abandoning module WebMMedia (486)
-[2021.01.24-02.15.34:643][974]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (484)
-[2021.01.24-02.15.34:643][974]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (482)
-[2021.01.24-02.15.34:643][974]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (480)
-[2021.01.24-02.15.34:643][974]LogModuleManager: Shutting down and abandoning module MagicLeapMediaCodecFactory (478)
-[2021.01.24-02.15.34:643][974]LogModuleManager: Shutting down and abandoning module MagicLeapMediaFactory (476)
-[2021.01.24-02.15.34:643][974]LogModuleManager: Shutting down and abandoning module PlanarCut (474)
-[2021.01.24-02.15.34:643][974]LogModuleManager: Shutting down and abandoning module CharacterAI (472)
-[2021.01.24-02.15.34:643][974]LogModuleManager: Shutting down and abandoning module SessionServices (470)
-[2021.01.24-02.15.34:644][974]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (468)
-[2021.01.24-02.15.34:644][974]LogModuleManager: Shutting down and abandoning module LiveCoding (466)
-[2021.01.24-02.15.34:644][974]LogModuleManager: Shutting down and abandoning module LevelSequence (464)
-[2021.01.24-02.15.34:644][974]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (462)
-[2021.01.24-02.15.34:644][974]LogModuleManager: Shutting down and abandoning module MovieScene (460)
-[2021.01.24-02.15.34:644][974]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (458)
-[2021.01.24-02.15.34:644][974]LogModuleManager: Shutting down and abandoning module PortalServices (456)
-[2021.01.24-02.15.34:644][974]LogModuleManager: Shutting down and abandoning module PortalRpc (454)
-[2021.01.24-02.15.34:644][974]LogModuleManager: Shutting down and abandoning module MessagingRpc (452)
-[2021.01.24-02.15.34:644][974]LogModuleManager: Shutting down and abandoning module AudioMixerXAudio2 (450)
-[2021.01.24-02.15.34:644][974]LogModuleManager: Shutting down and abandoning module AudioMixerCore (449)
-[2021.01.24-02.15.34:644][974]LogModuleManager: Shutting down and abandoning module ProfilerService (446)
-[2021.01.24-02.15.34:858][974]LogModuleManager: Shutting down and abandoning module TaskGraph (444)
-[2021.01.24-02.15.34:858][974]LogModuleManager: Shutting down and abandoning module Synthesis (442)
-[2021.01.24-02.15.34:858][974]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (440)
-[2021.01.24-02.15.34:858][974]LogModuleManager: Shutting down and abandoning module OculusInput (438)
-[2021.01.24-02.15.34:858][974]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (436)
-[2021.01.24-02.15.34:858][974]LogModuleManager: Shutting down and abandoning module GooglePAD (434)
-[2021.01.24-02.15.34:858][974]LogModuleManager: Shutting down and abandoning module EditableMesh (432)
-[2021.01.24-02.15.34:858][974]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (430)
-[2021.01.24-02.15.34:858][974]LogModuleManager: Shutting down and abandoning module CableComponent (428)
-[2021.01.24-02.15.34:858][974]LogModuleManager: Shutting down and abandoning module AudioCapture (426)
-[2021.01.24-02.15.34:858][974]LogModuleManager: Shutting down and abandoning module AudioCaptureRtAudio (425)
-[2021.01.24-02.15.34:858][974]LogModuleManager: Shutting down and abandoning module AssetTags (422)
-[2021.01.24-02.15.34:858][974]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (420)
-[2021.01.24-02.15.34:858][974]LogModuleManager: Shutting down and abandoning module AppleImageUtilsBlueprintSupport (418)
-[2021.01.24-02.15.34:858][974]LogModuleManager: Shutting down and abandoning module AppleImageUtils (416)
-[2021.01.24-02.15.34:858][974]LogModuleManager: Shutting down and abandoning module AndroidPermission (414)
-[2021.01.24-02.15.34:858][974]LogModuleManager: Shutting down and abandoning module NUTUnrealEngine4 (412)
-[2021.01.24-02.15.34:858][974]LogModuleManager: Shutting down and abandoning module NetcodeUnitTest (410)
-[2021.01.24-02.15.34:858][974]LogModuleManager: Shutting down and abandoning module TemplateSequence (408)
-[2021.01.24-02.15.34:858][974]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineRenderPasses (406)
-[2021.01.24-02.15.34:858][974]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineSettings (404)
-[2021.01.24-02.15.34:858][974]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineCore (402)
-[2021.01.24-02.15.34:858][974]LogModuleManager: Shutting down and abandoning module ImageWriteQueue (401)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module MediaCompositing (398)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module ImgMedia (396)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module MagicLeapSharedWorld (394)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module MagicLeapLightEstimation (392)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module MagicLeapHelperVulkan (390)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module MagicLeapHelperOpenGL (388)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module MagicLeapAudio (386)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module MeshSolverUtilities (384)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module MeshConversion (382)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module DynamicMesh (380)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module GeometryAlgorithms (378)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module GeometricObjects (376)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module GeometryCollectionTracks (374)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module GeometryCollectionSequencer (373)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (370)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module GeometryCacheSequencer (369)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module GeometryCache (366)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (365)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module ChaosNiagara (362)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module ChaosCloth (360)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module BackChannel (358)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module AutomationUtils (356)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (354)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module HotReload (353)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (350)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module UObjectPlugin (348)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (346)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module RiderSourceCodeAccess (344)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (342)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module SourceControl (341)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module CLionSourceCodeAccess (338)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module ActorLayerUtilities (336)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module AdvancedSteamSessions (334)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module AdvancedSessions (332)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module SoundFields (330)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module SignificanceManager (328)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (326)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (324)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (320)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module ActorSequence (318)
-[2021.01.24-02.15.34:860][974]LogModuleManager: Shutting down and abandoning module UdpMessaging (316)
-[2021.01.24-02.15.34:962][974]LogModuleManager: Shutting down and abandoning module TcpMessaging (314)
+[2021.01.24-02.39.45:354][  0]LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+[2021.01.24-02.39.45:354][  0]LogConfig: Setting CVar [[r.setres:1280x720]]
+[2021.01.24-02.39.45:354][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Engine.ini]
+[2021.01.24-02.39.45:354][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2021.01.24-02.39.45:354][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Engine.ini]
+[2021.01.24-02.39.45:354][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Engine.ini]
+[2021.01.24-02.39.45:354][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2021.01.24-02.39.45:354][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2021.01.24-02.39.45:354][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2021.01.24-02.39.45:354][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2021.01.24-02.39.45:354][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2021.01.24-02.39.45:354][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2021.01.24-02.39.45:354][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2021.01.24-02.39.45:354][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2021.01.24-02.39.45:354][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2021.01.24-02.39.45:354][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2021.01.24-02.39.45:354][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2021.01.24-02.39.45:354][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2021.01.24-02.39.45:354][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2021.01.24-02.39.45:354][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2021.01.24-02.39.45:354][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Engine.ini]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Engine.ini]
+[2021.01.24-02.39.45:355][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Engine.ini]
+[2021.01.24-02.39.45:355][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.01.24-02.39.45:355][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
+[2021.01.24-02.39.45:355][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.01.24-02.39.45:356][  0]LogInit: Selected Device Profile: [Windows]
+[2021.01.24-02.39.45:356][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2021.01.24-02.39.45:356][  0]LogHAL: Display: Platform has ~ 32 GB [34270089216 / 34359738368 / 32], which maps to Largest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2021.01.24-02.39.45:356][  0]LogInit: Going up to parent DeviceProfile []
+[2021.01.24-02.39.45:356][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.01.24-02.39.45:356][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Scalability.ini]
+[2021.01.24-02.39.45:356][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.01.24-02.39.45:357][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.01.24-02.39.45:357][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.01.24-02.39.45:357][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.01.24-02.39.45:357][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.01.24-02.39.45:357][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.01.24-02.39.45:357][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.01.24-02.39.45:357][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2021.01.24-02.39.45:357][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2021.01.24-02.39.45:357][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2021.01.24-02.39.45:357][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2021.01.24-02.39.45:357][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Config/Windows/Engine.ini]
+[2021.01.24-02.39.45:357][  0]LogInit: Computer: DIGITALSTORM-PC
+[2021.01.24-02.39.45:357][  0]LogInit: User: Admin
+[2021.01.24-02.39.45:357][  0]LogInit: CPU Page size=4096, Cores=8
+[2021.01.24-02.39.45:357][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2021.01.24-02.39.45:357][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
+[2021.01.24-02.39.45:357][  0]LogMemory: Platform Memory Stats for Windows
+[2021.01.24-02.39.45:357][  0]LogMemory: Process Physical Memory: 114.63 MB used, 114.63 MB peak
+[2021.01.24-02.39.45:357][  0]LogMemory: Process Virtual Memory: 95.92 MB used, 95.92 MB peak
+[2021.01.24-02.39.45:357][  0]LogMemory: Physical Memory: 8099.08 MB used,  24583.43 MB free, 32682.50 MB total
+[2021.01.24-02.39.45:357][  0]LogMemory: Virtual Memory: 5134.24 MB used,  134212592.00 MB free, 134217728.00 MB total
+[2021.01.24-02.39.45:524][  0]LogWindows: WindowsPlatformFeatures disabled or dedicated server build
+[2021.01.24-02.39.45:538][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2021.01.24-02.39.45:538][  0]LogInit: Using OS detected language (en-US).
+[2021.01.24-02.39.45:538][  0]LogInit: Using OS detected locale (en-US).
+[2021.01.24-02.39.45:538][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2021.01.24-02.39.45:862][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2021.01.24-02.39.45:865][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2021.01.24-02.39.45:871][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2021.01.24-02.39.45:879][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2021.01.24-02.39.45:879][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2021.01.24-02.39.45:884][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2021.01.24-02.39.45:920][  0]LogShaderCompilers: Guid format shader working directory is 6 characters bigger than the processId version (C:/Users/Admin/Desktop/Medieval_Mayhem1/Intermediate/Shaders/WorkingDirectory/10656/).
+[2021.01.24-02.39.45:920][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Admin/AppData/Local/Temp/UnrealShaderWorkingDir/E4689914498BEF49750966ACAE4E433F/'.
+[2021.01.24-02.39.45:920][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2021.01.24-02.39.45:920][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2021.01.24-02.39.45:920][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2021.01.24-02.39.46:279][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2021.01.24-02.39.46:312][  0]LogDerivedDataCache: Loaded boot cache 0.03s 75MB C:/Users/Admin/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.01.24-02.39.46:312][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Admin/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
+[2021.01.24-02.39.46:312][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file C:/Users/Admin/Desktop/Medieval_Mayhem1/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2021.01.24-02.39.46:312][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2021.01.24-02.39.46:312][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file C:/Users/Admin/Desktop/Medieval_Mayhem1/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.01.24-02.39.46:312][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2021.01.24-02.39.46:319][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2021.01.24-02.39.46:319][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.01.24-02.39.46:319][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2021.01.24-02.39.46:320][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Admin/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2021.01.24-02.39.46:320][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2021.01.24-02.39.46:320][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2021.01.24-02.39.46:322][  0]LogInit: Using OS detected language (en-US).
+[2021.01.24-02.39.46:322][  0]LogInit: Using OS detected locale (en-US).
+[2021.01.24-02.39.46:322][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the language.
+[2021.01.24-02.39.46:322][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the locale.
+[2021.01.24-02.39.46:323][  0]LogTextLocalizationManager: Compacting localization data took   0.00ms
+[2021.01.24-02.39.46:325][  0]LogAssetRegistry: FAssetRegistry took 0.0017 seconds to start up
+[2021.01.24-02.39.46:461][  0]LogPackageLocalizationCache: Processed 19 localized package path(s) for 1 prioritized culture(s) in 0.000534 seconds
+[2021.01.24-02.39.46:495][  0]LogInit: Selected Device Profile: [Windows]
+[2021.01.24-02.39.46:516][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2021.01.24-02.39.46:516][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2021.01.24-02.39.46:516][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2021.01.24-02.39.46:516][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2021.01.24-02.39.46:516][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2021.01.24-02.39.46:525][  0]LogNetVersion: Medieval_Mayhem1 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 3763729611)
+[2021.01.24-02.39.46:583][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (0000025C61B2A940), frame # 0
+[2021.01.24-02.39.46:583][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000025C61B00F40), frame # 0
+[2021.01.24-02.39.46:584][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000025C5E788400), frame # 0
+[2021.01.24-02.39.46:618][  0]LogCollectionManager: Loaded 0 collections in 0.000457 seconds
+[2021.01.24-02.39.46:619][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Admin/Desktop/Medieval_Mayhem1/Saved/Collections/' took 0.00s
+[2021.01.24-02.39.46:619][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Admin/Desktop/Medieval_Mayhem1/Content/Developers/Admin/Collections/' took 0.00s
+[2021.01.24-02.39.46:619][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Admin/Desktop/Medieval_Mayhem1/Content/Collections/' took 0.00s
+[2021.01.24-02.39.46:619][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000002 seconds (updated 0 objects)
+[2021.01.24-02.39.46:720][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2021.01.24-02.39.46:723][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2021.01.24-02.39.46:752][  0]SourceControl: Source control is disabled
+[2021.01.24-02.39.46:752][  0]SourceControl: Source control is disabled
+[2021.01.24-02.39.46:755][  0]SourceControl: Source control is disabled
+[2021.01.24-02.39.46:829][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2021.01.24-02.39.46:840][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.01.24-02.39.46:840][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.01.24-02.39.46:863][  0]LogOcInput: OculusInput pre-init called
+[2021.01.24-02.39.46:873][  0]LogUObjectArray: 19108 objects as part of root set at end of initial load.
+[2021.01.24-02.39.46:873][  0]LogUObjectAllocator: 5020176 out of 0 bytes used by permanent object pool.
+[2021.01.24-02.39.46:873][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2021.01.24-02.39.46:896][  0]LogEngine: Initializing Engine...
+[2021.01.24-02.39.46:897][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2021.01.24-02.39.46:905][  0]LogInit: Initializing FReadOnlyCVARCache
+[2021.01.24-02.39.46:905][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2021.01.24-02.39.46:906][  0]LogInit: Texture streaming: Disabled
+[2021.01.24-02.39.46:925][  0]LogInit: Display: Game Engine Initialized.
+[2021.01.24-02.39.46:926][  0]LogNiagaraEditor: Warning: GEditor isn't valid! Particle reset commands will not work for Niagara components!
+[2021.01.24-02.39.46:941][  0]LogInit: Display: Starting Game.
+[2021.01.24-02.39.46:941][  0]LogNet: Browse: /Game/Multiplayer/MainMenu?Name=Player
+[2021.01.24-02.39.46:941][  0]LogLoad: LoadMap: /Game/Multiplayer/MainMenu?Name=Player
+[2021.01.24-02.39.46:941][  0]LogWorld: BeginTearingDown for /Temp/Untitled_0
+[2021.01.24-02.39.46:942][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2021.01.24-02.39.46:949][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.67ms
+[2021.01.24-02.39.46:977][  0]LogAIModule: Creating AISystem for world MainMenu
+[2021.01.24-02.39.46:977][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000025C5903C800), frame # 0
+[2021.01.24-02.39.46:977][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000025C6415AFC0), frame # 0
+[2021.01.24-02.39.46:977][  0]LogLoad: Game class is 'MultiplayerGameMode_C'
+[2021.01.24-02.39.46:977][  0]LogOnline: OSS: Creating online subsystem instance for: STEAM
+[2021.01.24-02.39.46:977][  0]LogOnline: Warning: STEAM: Steam API disabled!
+[2021.01.24-02.39.46:977][  0]LogOnline: Display: STEAM: OnlineSubsystemSteam::Shutdown()
+[2021.01.24-02.39.46:978][  0]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2021.01.24-02.39.46:978][  0]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2021.01.24-02.39.46:978][  0]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2021.01.24-02.39.46:978][  0]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2021.01.24-02.39.46:978][  0]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2021.01.24-02.39.46:978][  0]LogNet: GameNetDriver IpNetDriver_0 IpNetDriver listening on port 17777
+[2021.01.24-02.39.46:978][  0]LogWorld: Bringing World /Game/Multiplayer/MainMenu.MainMenu up for play (max tick rate 30) at 2021.01.23-21.39.46
+[2021.01.24-02.39.46:978][  0]LogWorld: Bringing up level for play took: 0.000247
+[2021.01.24-02.39.46:978][  0]LogLoad: Took 0.036953 seconds to LoadMap(/Game/Multiplayer/MainMenu)
+[2021.01.24-02.39.46:983][  0]LogLoad: (Engine Initialization) Total time: 2.50 seconds
+[2021.01.24-02.39.46:983][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2021.01.24-02.39.49:273][ 67]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:63024
+[2021.01.24-02.39.49:273][ 67]LogHandshake: SendConnectChallenge. Timestamp: 2.289328, Cookie: 164008251176192144155205255094092250000146175246234099039147
+[2021.01.24-02.39.49:273][ 67]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:63025
+[2021.01.24-02.39.49:273][ 67]LogHandshake: SendConnectChallenge. Timestamp: 2.289328, Cookie: 204080048148225245126210028239117109135230092110025067038104
+[2021.01.24-02.39.49:305][ 68]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:63025
+[2021.01.24-02.39.49:305][ 68]LogHandshake: SendChallengeAck. InCookie: 204080048148225245126210028239117109135230092110025067038104
+[2021.01.24-02.39.49:305][ 68]LogNet: Server accepting post-challenge connection from: 127.0.0.1:63025
+[2021.01.24-02.39.49:305][ 68]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2021.01.24-02.39.49:305][ 68]LogNet: NotifyAcceptedConnection: Name: MainMenu, TimeStamp: 01/23/21 21:39:49, [UNetConnection] RemoteAddr: 127.0.0.1:63025, Name: IpConnection_0, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2021.01.24-02.39.49:305][ 68]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:63025, Name: IpConnection_0, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2021.01.24-02.39.49:305][ 68]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:63024
+[2021.01.24-02.39.49:305][ 68]LogHandshake: SendChallengeAck. InCookie: 164008251176192144155205255094092250000146175246234099039147
+[2021.01.24-02.39.49:305][ 68]LogNet: Server accepting post-challenge connection from: 127.0.0.1:63024
+[2021.01.24-02.39.49:305][ 68]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2021.01.24-02.39.49:305][ 68]LogNet: NotifyAcceptedConnection: Name: MainMenu, TimeStamp: 01/23/21 21:39:49, [UNetConnection] RemoteAddr: 127.0.0.1:63024, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2021.01.24-02.39.49:305][ 68]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:63024, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2021.01.24-02.39.49:305][ 68]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Multiplayer/MainMenu.MainMenu: Accepted
+[2021.01.24-02.39.49:305][ 68]LogNet: Remote platform little endian=1
+[2021.01.24-02.39.49:305][ 68]LogNet: This platform little endian=1
+[2021.01.24-02.39.49:305][ 68]LogNetVersion: Medieval_Mayhem1 1.0.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 3528378707)
+[2021.01.24-02.39.49:339][ 69]LogNet: Login request: ?Name=DigitalStorm-PC-485C1025485068294DA7FF95855967BE userId: NULL:DigitalStorm-PC-485C1025485068294DA7FF95855967BE platform: NULL
+[2021.01.24-02.39.49:339][ 69]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Multiplayer/MainMenu.MainMenu: Accepted
+[2021.01.24-02.39.49:339][ 69]LogNet: Remote platform little endian=1
+[2021.01.24-02.39.49:339][ 69]LogNet: This platform little endian=1
+[2021.01.24-02.39.49:372][ 70]LogNet: Login request: ?Name=DigitalStorm-PC-09DA441340061744049121B35FADEDE8 userId: NULL:DigitalStorm-PC-09DA441340061744049121B35FADEDE8 platform: NULL
+[2021.01.24-02.39.49:406][ 71]LogNet: Client netspeed is 10000
+[2021.01.24-02.39.49:406][ 71]LogNet: Join request: /Engine/Maps/Entry?Name=DigitalStorm-PC-485C1025485068294DA7FF95855967BE?SplitscreenCount=1
+[2021.01.24-02.39.49:406][ 71]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2021.01.24-02.39.49:406][ 71]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2021.01.24-02.39.49:407][ 71]LogNet: Join succeeded: DigitalStorm-PC-485C
+[2021.01.24-02.39.49:440][ 72]LogNet: Client netspeed is 10000
+[2021.01.24-02.39.49:440][ 72]LogNet: Join request: /Engine/Maps/Entry?Name=DigitalStorm-PC-09DA441340061744049121B35FADEDE8?SplitscreenCount=1
+[2021.01.24-02.39.49:440][ 72]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2021.01.24-02.39.49:440][ 72]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2021.01.24-02.39.49:440][ 72]LogNet: Join succeeded: DigitalStorm-PC-09DA
+[2021.01.24-02.39.52:576][167]LogNet: UChannel::ReceivedSequencedBunch: Bunch.bClose == true. ChIndex == 0. Calling ConditionalCleanUp.
+[2021.01.24-02.39.52:576][167]LogNet: UChannel::CleanUp: ChIndex == 0. Closing connection. [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:63025, Name: IpConnection_0, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: PlayerController_0, Owner: PlayerController_0, UniqueId: NULL:DigitalStorm-PC-485C1025485068294DA7FF95855967BE
+[2021.01.24-02.39.52:576][167]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:63025, Name: IpConnection_0, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: PlayerController_0, Owner: PlayerController_0, UniqueId: NULL:DigitalStorm-PC-485C1025485068294DA7FF95855967BE, Channels: 11, Time: 2021.01.24-02.39.52
+[2021.01.24-02.39.52:576][167]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:63025, Name: IpConnection_0, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: PlayerController_0, Owner: PlayerController_0, UniqueId: NULL:DigitalStorm-PC-485C1025485068294DA7FF95855967BE
+[2021.01.24-02.39.52:576][167]LogOnlineSession: Warning: OSS: No game present to leave for session (GameSession)
+[2021.01.24-02.40.01:548][439]LogNet: UChannel::ReceivedSequencedBunch: Bunch.bClose == true. ChIndex == 0. Calling ConditionalCleanUp.
+[2021.01.24-02.40.01:548][439]LogNet: UChannel::CleanUp: ChIndex == 0. Closing connection. [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:63024, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:DigitalStorm-PC-09DA441340061744049121B35FADEDE8
+[2021.01.24-02.40.01:548][439]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:63024, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:DigitalStorm-PC-09DA441340061744049121B35FADEDE8, Channels: 9, Time: 2021.01.24-02.40.01
+[2021.01.24-02.40.01:548][439]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:63024, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:DigitalStorm-PC-09DA441340061744049121B35FADEDE8
+[2021.01.24-02.40.01:548][439]LogOnlineSession: Warning: OSS: No game present to leave for session (GameSession)
