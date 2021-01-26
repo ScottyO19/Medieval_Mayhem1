@@ -603,3 +603,58 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2021.01.26-19.19.19:901][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
 [2021.01.26-19.19.19:902][  0]LogInit: FAudioDevice initialized.
 [2021.01.26-19.19.19:902][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2021.01.26-19.19.21:006][  0]LogDerivedDataCache: Saved boot cache 1.10s 75MB C:/Users/soneil/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.01.26-19.19.21:010][  0]LogInit: Texture streaming: Enabled
+[2021.01.26-19.19.21:022][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2021.01.26-19.19.21:022][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2021.01.26-19.19.21:023][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2021.01.26-19.19.21:065][  0]LogInit: Transaction tracking system initialized
+[2021.01.26-19.19.21:082][  0]BlueprintLog: New page: Editor Load
+[2021.01.26-19.19.21:141][  0]LocalizationService: Localization service is disabled
+[2021.01.26-19.19.21:275][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2021.01.26-19.19.21:275][  0]LogCook: Display: Mobile HDR setting 1
+[2021.01.26-19.19.21:381][  0]LogFileCache: Scanning file cache for directory 'C:/Users/soneil/Documents/GitHub/Medieval_Mayhem1/Content/' took 0.00s
+[2021.01.26-19.19.21:552][  0]SourceControl: Source control is disabled
+[2021.01.26-19.19.21:552][  0]LogUnrealEdMisc: Loading editor; pre map load, took 6.031
+[2021.01.26-19.19.21:552][  0]Cmd: MAP LOAD FILE="../../../../../../Users/soneil/Documents/GitHub/Medieval_Mayhem1/Content/Multiplayer/MainMenu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2021.01.26-19.19.21:553][  0]LightingResults: New page: Lighting Build
+[2021.01.26-19.19.21:553][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2021.01.26-19.19.21:553][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.01.26-19.19.21:553][  0]MapCheck: New page: Map Check
+[2021.01.26-19.19.21:553][  0]LightingResults: New page: Lighting Build
+[2021.01.26-19.19.21:561][  0]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001D7423FBC00), frame # 0
+[2021.01.26-19.19.21:561][  0]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001D7423F7B00), frame # 0
+[2021.01.26-19.19.21:562][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.58ms
+[2021.01.26-19.19.21:596][  0]LogAIModule: Creating AISystem for world MainMenu
+[2021.01.26-19.19.21:596][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001D73260DC00), frame # 0
+[2021.01.26-19.19.21:597][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001D7326611C0), frame # 0
+[2021.01.26-19.19.21:597][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2021.01.26-19.19.21:605][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.59ms
+[2021.01.26-19.19.21:606][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.01.26-19.19.21:606][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.12ms to complete.
+[2021.01.26-19.19.21:606][  0]LogFileHelpers: Loading map 'MainMenu' took 0.053
+[2021.01.26-19.19.21:607][  0]LogUnrealEdMisc: Total Editor Startup Time, took 6.085
+[2021.01.26-19.19.21:708][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.26-19.19.21:716][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.26-19.19.21:722][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.26-19.19.21:728][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.26-19.19.21:734][  0]LogCollectionManager: Loaded 0 collections in 0.001392 seconds
+[2021.01.26-19.19.21:747][  0]LogFileCache: Scanning file cache for directory 'C:/Users/soneil/Documents/GitHub/Medieval_Mayhem1/Saved/Collections/' took 0.00s
+[2021.01.26-19.19.21:747][  0]LogFileCache: Scanning file cache for directory 'C:/Users/soneil/Documents/GitHub/Medieval_Mayhem1/Content/Developers/soneil/Collections/' took 0.00s
+[2021.01.26-19.19.21:747][  0]LogFileCache: Scanning file cache for directory 'C:/Users/soneil/Documents/GitHub/Medieval_Mayhem1/Content/Collections/' took 0.00s
+[2021.01.26-19.19.21:747][  0]LogContentBrowser: Native class hierarchy populated in 0.0091 seconds. Added 3454 classes and 831 folders.
+[2021.01.26-19.19.21:749][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2021.01.26-19.19.21:790][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2021.01.26-19.19.21:791][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0002 seconds. Added 2 classes and 0 folders.
+[2021.01.26-19.19.21:826][  0]LogSlate: Took 0.000180 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2021.01.26-19.19.21:828][  0]LogSlate: Took 0.000179 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2021.01.26-19.19.21:831][  0]LogSlate: Took 0.000108 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2021.01.26-19.19.21:887][  0]LogRenderer: Reallocating scene render targets to support 1056x556 Format 10 NumSamples 1 (Frame:1).
+[2021.01.26-19.19.21:987][  0]LogSlate: Window 'Tutorials' being destroyed
+[2021.01.26-19.19.21:994][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2021.01.26-19.19.21:994][  0]LogLoad: (Engine Initialization) Total time: 6.47 seconds
+[2021.01.26-19.19.21:994][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2021.01.26-19.19.22:033][  0]LogAssetRegistry: Asset discovery search completed in 3.6473 seconds
+[2021.01.26-19.19.22:036][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000002 seconds (updated 0 objects)
+[2021.01.26-19.19.22:037][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2021.01.26-19.19.22:063][  0]LogSlate: Took 0.000105 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
